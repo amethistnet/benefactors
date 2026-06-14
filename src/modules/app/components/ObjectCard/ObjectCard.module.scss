@@ -16,6 +16,11 @@
     user-select: none;
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
 
+    :last-child {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
 
     .name {
         font-weight: bold;

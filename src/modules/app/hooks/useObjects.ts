@@ -6,13 +6,15 @@ import type { ObjectResponse } from "~/types/ObjectResponse";
 export function useObjects() {
     const { data, isLoading } = useQuery<ObjectResponse[]>({
         queryKey: ["objects"],
-        queryFn: () => {
-            return fetch(`/api/objects`).then((res) => res.json());
-        },
+        queryFn: getObjects,
     });
 
     return {
         data,
         isLoading,
     };
+}
+
+export function getObjects() {
+    return fetch(`/api/objects`).then((res) => res.json());
 }
