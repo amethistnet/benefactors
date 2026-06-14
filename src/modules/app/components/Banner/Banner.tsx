@@ -21,7 +21,7 @@ export function Banner() {
                     justify={"center"}
                     align={"center"}
                 >
-                    <Text className={styles.title}>Bismuth Benefactors</Text>
+                    <Text className={styles.title}>Amethist Benefactors</Text>
                 </Flex>
                 <Tooltip label="Image credits" position="top" withArrow>
                     <ActionIcon

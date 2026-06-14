@@ -8,13 +8,12 @@ import { Geist } from "next/font/google";
 import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
 import { BottomMessage } from "~/modules";
 
-import { Layout } from "../modules/layout/components/Layout/Layout";
+import { Layout } from "~/modules";
 import Providers from "./Providers";
 
 export const metadata: Metadata = {
-    title: "Bismuth Benefactors",
+    title: "Amethist Benefactors",
     description: "Our gratitude to those who help us.",
-    icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
 const geist = Geist({
